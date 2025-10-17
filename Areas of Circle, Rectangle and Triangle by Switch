@@ -1,0 +1,42 @@
+  #include <iostream>
+ using namespace std;
+ int main() {
+cout<< "Chose one of them: \n 1.Circle \n 2.Rectangle \n 3.Tringle" << endl;
+int option;
+cin >> option;
+switch (option) {
+    case 1 : {
+ float radius;     
+        cout<< "Enter radius:";
+cin >> radius;
+float area = 3.14 * radius * radius ;
+cout << "Area of Circle="<< area << endl ;
+break ;
+}
+
+case 2 : {
+    float length, width;
+cout << "Enter Length?" << endl; 
+cin >> length;
+ cout<< "Enter Width?";
+ cin>> width;
+float rectangle = length * width;
+cout<< "Area of Rectangle=" << rectangle << endl ; 
+break ;
+}
+case 3 :  {
+    float base, height;
+cout << "Enter Base of Triangle?"<< endl ;
+cin >> base;
+cout << "Enter the Height of Triangle?"<< endl ;
+cin >> height;
+float triangle = 0.5 * base * height;
+cout<<"Area of Triangle= " ;
+break ;
+}
+default :{
+    cout<< "Invalid option Please type corrrect option!" ;
+}
+}
+return 0 ; 
+}
