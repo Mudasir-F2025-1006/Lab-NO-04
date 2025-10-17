@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+int main() {
+cout << "Bill Type? \n 1.Domestic \n 2.commercial  "<< endl ;
+int option;
+cin >> option;
+switch (option) {
+ case 1 : {
+     int number;
+        cout << "Domestic:-" << endl ;
+      
+        int units ;
+        cout<< "Number of Units?" << endl;
+        cin >> units;
+        
+        
+        int product;
+        if (units <=100) {
+             product=units * 10 ;
+                    cout << "Bill=" << product ;
+        } else if( units > 100) {
+            product=units * 15;
+         cout << "Bill=" << product ;
+        }
+        break;
+    }
+    case 2 : {
+        cout << "Commercial:-"<< endl;
+        int units;
+    cout << "Number of units?" << endl;
+    cin >>units; 
+    
+    
+     int product;
+    if (units <=100) {
+     product= units * 25;
+    cout <<" Bill=" << product ;
+    } else if (units > 100) {
+    product= units * 25;
+    cout<< "Bill=" << product  ;
+    }
+    
+        
+        break ;
+    
+    }
+ 
+default : {
+    cout << "Invaled Your option🤢" ;
+}
+}
+return 0;
+}
